@@ -8,12 +8,12 @@
         <nav class="itens_menu">
             <ul class="nome_itens">
                 <li>
-                    <a href="">INÍCIO</a>
+                    <a href="" id="inicio_id">INÍCIO</a>
                 </li>
             </ul>
             <ul class="nome_itens">
                 <li>
-                    <a href="">HISTÓRIA</a>
+                    <a href="#historia_id">HISTÓRIA</a>
                 </li>
             </ul>
             <a href="">
@@ -21,26 +21,154 @@
             </a>
             <ul class="nome_itens">
                 <li>
-                    <a href="">PERSONAGENS</a>
+                    <a href="#personagens_id">PERSONAGENS</a>
                 </li>
             </ul>
             <ul class="nome_itens">
                 <li>
-                    <a href="">DICAS</a>
+                    <a href="#sobre_mim_id">SOBRE MIM</a>
                 </li>
             </ul>
         </nav>
     </body>
     <main class="info">
+        <!--INFORMACOES INICIAIS-->
         <div class="container">
             <div class="nome">
                 <h1 class="nome_jogo1">RED DEAD</h1>
-                <h1 class="nome_jogo2">REDEMPTION <span class="vermelho">2</span></h1>
+                <h1 class="nome_jogo2">REDEMPTION <span class   ="vermelho">2</span></h1>
                 <p>Red Dead Redemption <span class="vermelho">2</span> é um aclamado jogo de ação e aventura desenvolvido pela <span class="amarelo">Rockstar Games</span>. Lançado em outubro de 2018, o jogo é uma prequela de Red Dead Redemption de 2010 e é ambientado em um mundo aberto que retrata o final do século XIX nos Estados Unidos. A história segue <span class="vermelho">Arthur Morgan</span>, um membro da gangue Van der Linde, enquanto ele navega pelos desafios da vida criminosa em um mundo que está rapidamente se modernizando e deixando o Velho Oeste para trás.</p>
             </div>
             <div class="imagem_inicial">
-                <img src="imagem1.JPG" width="600" height="425">
+                <img src="imagem1.JPG" width="500" height="425">
             </div>
+        </div>
+        <!--BORDA-->
+        <div class="border">
+            <div class="arma">
+                <img src="Fondo_revolveres_x2.webp">
+            </div>
+            <div class="arma">
+                <img src="Fondo_inquisitor.webp">
+            </div>
+            <div class="arma">
+                <img src="Fondo_scorpion.webp">
+            </div>
+            <div class="arma">
+                <img src="Fondo_seis_disparos.webp">
+            </div>
+            <div class="arma">
+                <img src="Fondo_widow.webp">
+            </div>
+        </div>
+        <!--PARTE DA HISTÓRIA-->
+        <div class="historia"  id="historia_id">
+            <section class="secao_historia">
+                <h1 class="historia_titulo">HISTÓRIA</h1>
+                <div class="divisao_historia">
+                    <div class="esq_historia">
+                        <h3 class="titulo_historia">ENREDO</h3>
+                        <p><span class   ="inicio_texto">ARTHUR MORGAN</span> é o protagonista do jogo, e a narrativa se desenrola a partir de sua perspectiva. Ele faz parte da gangue Van der Linde, liderada por Dutch van der Linde. Após um assalto mal sucedido na cidade de Blackwater, a gangue é forçada a fugir e lutar pela sobrevivência enquanto são caçados por autoridades e caçadores de recompensas.</p>
+                        <h3 class="titulo_historia">A GANGUE VAN DER LINDE</h3>
+                        <p><span class   ="inicio_texto">A gangue</span>  é composta por diversos personagens memoráveis, incluindo John Marston, o protagonista do primeiro “Red Dead Redemption”. Cada membro da gangue tem suas próprias histórias e motivações, criando uma dinâmica complexa e envolvente.</p>
+                    </div>
+                    <div class="dir_historia">
+                        <h3 class="titulo_historia">CONFLITOS INTERNOS E EXTERNOS</h3>
+                        <p><span class   ="inicio_texto">AO longo do jogo</span> , Arthur enfrenta dilemas morais e pessoais. Ele deve equilibrar sua lealdade à gangue com sua própria bússola moral, enquanto Dutch se torna cada vez mais imprevisível e paranóico. Conflitos internos surgem à medida que a gangue enfrenta pressões externas de forças da lei e outras gangues.</p>
+                        <h3 class="titulo_historia">DECADÊNCIA E REDENÇÃO</h3>
+                        <p><span class   ="inicio_texto">A história</span>  de “Red Dead Redemption 2” é uma jornada de decadência e busca de redenção. Arthur é forçado a confrontar seu próprio passado e tomar decisões que afetarão não apenas seu destino, mas também o destino de seus companheiros. A narrativa explora temas profundos de honra, lealdade, traição e a luta pela sobrevivência em um mundo em rápida mudança.</p>
+                    </div>    
+                </div>
+            </section>
+        </div>
+        <!--PERSONAGENS-->
+        <div class="personagens" id="personagens_id">
+            <section class="personagen_section">
+                <h1 class="personagens_titulo">PERSONAGENS</h1>
+                <div class="personagens_itens">
+                    <div class="itens" onclick="flipCard(this)">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="arthur2.jpg" width="300" height="300">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Arthur Morgan é um membro leal da gangue Van der Linde e o protagonista de “Red Dead Redemption 2”. Ele é um fora-da-lei experiente, lutando com dilemas morais e pessoais enquanto tenta sobreviver no oeste selvagem.</p>
+                            </div>
+                        </div>
+                        <figcaption class="imagem_personagem">ARTHUR MORGAN</figcaption>
+                    </div>
+                    <div class="itens" onclick="flipCard(this)">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="dutch.webp" width="300" height="300">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Dutch van der Linde é o carismático líder da gangue Van der Linde. Ele prega a liberdade e a resistência contra a opressão, mas à medida que o tempo passa, se torna mais imprevisível e paranoico.</p>
+                            </div>
+                        </div>
+                        <figcaption class="imagem_personagem">dutch van der linde</figcaption>
+                    </div>
+                    <div class="itens" onclick="flipCard(this)">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="john.jpg" width="300" height="300">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>John Marston, membro leal da gangue Van der Linde, é um ex-fora-da-lei que tenta deixar seu passado para trás e criar um futuro melhor para sua família. Ele é o protagonista do primeiro “Red Dead Redemption”.</p>
+                            </div>
+                        </div>
+                        <figcaption class="imagem_personagem">john marston</figcaption>
+                    </div>
+                    <div class="itens" onclick="flipCard(this)">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="sadie.jpg" width="300" height="300">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Sadie Adler, inicialmente uma viúva vulnerável, se transforma em uma das mais ferozes aliadas da gangue Van der Linde após a morte de seu marido. Determinada e corajosa, busca vingança e justiça.</p>
+                            </div>
+                        </div>
+                        <figcaption class="imagem_personagem">sadie adler</figcaption>
+                    </div>
+                </div>    
+            </section>
+        </div> 
+        <!--BORDA-->
+        <div class="border">
+            <div class="arma">
+                <img src="Fondo_cargador_trasero.webp" >
+            </div>
+            <div class="arma">
+                <img src="Fondo_halcon.webp">
+            </div>
+            <div class="arma">
+                <img src="Fondo_lion.webp">
+            </div>
+            <div class="arma">
+                <img src="Fondo_owl.webp">
+            </div>
+            <div class="arma">
+                <img src="123.webp">
+            </div>
+        </div>
+        <div class="sobre_mim" id="sobre_mim_id">
+            <section class="sobremim_section">
+                <div class="sobre_mim_texto">
+                    <h1 class="titulo_about"> sobre mim</h1>
+                    <p>o meu primeiro contato com o jogo foi 2 anos após seu lançamento. joguei o jogo às cegas, sem saber ao certo como seria, porém o jogo é 
+                        incrivelmente bem feito e imersivo, portanto me aprofundei bastante na lore e gameplay do jogo e me tornei fã, joguei por mais de 150 horas e busco a platina :)</p>
+                    </p>
+                </div>
+                <div class="metacritic">
+                    <div class="texto_dir_sobre_mim">
+                        <h2><strong>metacritic</strong></h2>
+                        <p>notas de usuários e críticos sobre o jogo </p>
+                    </div>    
+                    <a href="https://www.metacritic.com/game/red-dead-redemption-2/">
+                        <img src="metacritic.png" alt="Avaliações do Metacritic" width="150" height="150">
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
 </html>

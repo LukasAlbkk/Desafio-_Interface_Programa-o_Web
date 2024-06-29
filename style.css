@@ -15,16 +15,21 @@ html{
     flex-direction: row;
     margin: 20px;
     border-radius: 62.5rem;
+    border: solid black 3px;
     background-color: #be0606;
     padding: 0px 6.25rem 0px 10rem;
     transition: .3s ease;
     box-sizing: border-box;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    background: url('textura.jpg') repeat;
+    
 
 }
 .itens_menu img{
     display: block;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(224, 220, 220);
+    border: solid black 3px;
 }
 .nome_itens{
     list-style: none;
@@ -47,6 +52,7 @@ html{
     justify-content: space-around;
     flex-direction: row;
     padding: 50px;
+    height: 500px;
    
 }
 .imagem_inicial img{
@@ -76,7 +82,173 @@ html{
 }
 .vermelho {
     color: #be0606;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
 }
 .amarelo{
     color: rgb(243,175,61);
+}
+.historia_titulo{
+    color: #be0606;
+    font-size: 2.0rem;
+    background-color:rgb(224, 220, 220);
+    display: inline-block;
+    width: 600px;
+    border-radius: 62.5rem;
+    border: solid black 3px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+.secao_historia{
+    text-align: center;
+}
+
+.border{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 75px;
+    padding-bottom: 60px;
+}
+.divisao_historia{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around   ;
+    color: rgb(224, 220, 220);  ;
+}
+.esq_historia{
+    padding: 50px;
+    border-top: solid rgb(224, 220, 220) 4px;
+}
+.dir_historia{
+    padding: 50px;
+    border-top: solid rgb(224, 220, 220) 4px;
+}
+.titulo_historia{
+    color: rgb(243,175,61);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    text-decoration: underline 2px;
+}
+.historia{
+    background-color: rgb(139, 34, 34);
+    border-radius:1.3rem ;
+    border: solid rgb(224, 220, 220) 4px;
+}
+.inicio_texto{
+    color:rgb(243,175,61);
+}
+.personagens_itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+}
+.itens img{
+    border-radius: 30px;
+    border: solid rgb(224, 220, 220) 4px ;
+}   
+.personagen_section{
+    padding-top: 50px;
+    color: rgb(224, 220, 220);
+    padding-bottom: 130px;
+    transition: .3s ease;
+}
+.itens{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    perspective: 1000px;
+}
+.personagen_section h1{
+    text-align: center;
+    font-size: 2.0rem;
+}
+.itens figcaption{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.6rem;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.itens:hover .flip-card-inner,
+.itens.clicked .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 30px;
+}
+
+.flip-card-back {
+    background-color: rgb(139, 34, 34);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    height: 308px;
+    width: 308px;
+    border: solid rgb(224, 220, 220) 4px ;
+}
+.sobremim_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    color: rgb(224, 220, 220) ;
+}
+.sobre_mim{
+    display: flex;
+    justify-content: center;
+}
+.sobre_mim_texto{
+    text-align: center;
+    align-self: center;
+    border-right: solid 5px rgb(224, 220, 220)  ;
+    border-right-style: double;
+}
+.sobre_mim_texto p{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.metacritic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.texto_dir_sobre_mim{
+    text-align: center;
+    align-self: center;
+}
+.texto_dir_sobre_mim h2{
+    color: rgb(243,203,69);
+    position: relative;
+    bottom: 29px;
+}
+.texto_dir_sobre_mim p{
+    color: #be0606;
+    position: relative;
+    bottom: 28px;
+}
+.metacritic img{
+    position: relative;
+    right: 100px;
+    border: solid rgb(224, 220, 220) 5px;
+    border-radius: 50px;
 }
