@@ -4,10 +4,63 @@
     font-weight: normal;
     font-style: normal;
 }
-html{
+body{
     font-family: 'FonteLUCAS';
-    background-color: #282218;;
+    background-color: #282218;
+    transition: .9s ease;
+    color: rgb(224, 220, 220);
 }
+body.modo-claro {
+    background-color: rgb(224, 220, 220);
+    color: #000000;
+}
+.toggle-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+#modo_label{
+    position: relative;
+    right:20px;
+}
+.botao {
+    display: none;
+}
+.modo_claro {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    right: 30px;
+}
+.modo_claro:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s;
+}
+
+.botao:checked + .modo_claro {
+    background-color: #be0606;
+}
+
+.botao:checked + .modo_claro:before {
+    transform: translateX(20px);
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
 .itens_menu{
     display: flex;
     justify-content: space-around;
@@ -22,7 +75,6 @@ html{
     box-sizing: border-box;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     background: url('textura.jpg') repeat;
-    
 
 }
 .itens_menu img{
@@ -44,7 +96,7 @@ html{
 }
 .itens_menu ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 30px;
 }
 .container{
@@ -60,25 +112,34 @@ html{
     position: relative;
     left: 10px;
     top: 10px;
-
 }
-.nome{
-    font-size: 2.0rem;
+body.modo-claro .imagem_inicial img{
+    border: solid black 5px;
+    transition: .9s ease;
 }
 .nome_jogo2{
     position: relative;
     bottom: 50px;
 }
+body.modo-claro .nome_jogo2{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+body.modo-claro .nome_jogo1{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
 .nome{
+    font-size: 2.0rem;
     position: relative;
     bottom: 50px;
-    color: white;
 }
 .nome p{
     font-size:1.4rem;
     position: relative;
     bottom: 50px;
     width: 500px;
+}
+body.modo-claro .nome p{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 .vermelho {
     color: #be0606;
@@ -112,7 +173,7 @@ html{
     display: flex;
     flex-direction: row ;
     justify-content: space-around   ;
-    color: rgb(224, 220, 220);  ;
+    
 }
 .esq_historia{
     padding: 50px;
@@ -133,6 +194,9 @@ html{
     border-radius:1.3rem ;
     border: solid rgb(224, 220, 220) 4px;
 }
+body.modo-claro .historia{
+    border: solid black 4px ;
+}
 .inicio_texto{
     color:rgb(243,175,61);
 }
@@ -142,13 +206,18 @@ html{
     justify-content: space-around;
     padding: 40px;
 }
+body.modoclaro .imagem_inicial img{
+    border: solid 5px black;
+}
 .itens img{
     border-radius: 30px;
     border: solid rgb(224, 220, 220) 4px ;
 }   
+body.modo-claro .itens img{
+    border: solid black 5px ;
+}
 .personagen_section{
-    padding-top: 50px;
-    color: rgb(224, 220, 220);
+    padding-top: 50px; 
     padding-bottom: 130px;
     transition: .3s ease;
 }
@@ -175,12 +244,10 @@ html{
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
-
 .itens:hover .flip-card-inner,
 .itens.clicked .flip-card-inner {
     transform: rotateY(180deg);
 }
-
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -192,7 +259,6 @@ html{
     color: black;
     border-radius: 30px;
 }
-
 .flip-card-back {
     background-color: rgb(139, 34, 34);
     color: white;
@@ -207,11 +273,17 @@ html{
     width: 308px;
     border: solid rgb(224, 220, 220) 4px ;
 }
+body.modo-claro .flip-card-back{
+    border: solid black 4px ;
+}
 .sobremim_section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
-    color: rgb(224, 220, 220) ;
+    padding-bottom: 50px;
+}
+body.modo-claro .sobremim_section{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 .sobre_mim{
     display: flex;
@@ -223,10 +295,14 @@ html{
     border-right: solid 5px rgb(224, 220, 220)  ;
     border-right-style: double;
 }
+body.modo-claro .sobre_mim_texto{
+    border-right: solid 5px black;
+}
 .sobre_mim_texto p{
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .metacritic{
     display: flex;
     flex-direction: row;
@@ -235,6 +311,9 @@ html{
 .texto_dir_sobre_mim{
     text-align: center;
     align-self: center;
+}
+body.modo-claro .texto_dir_sobre_mim h2{
+    color: rgb(235, 180, 2);;
 }
 .texto_dir_sobre_mim h2{
     color: rgb(243,203,69);
@@ -245,10 +324,56 @@ html{
     color: #be0606;
     position: relative;
     bottom: 28px;
+    font-size: 1.1rem;
 }
 .metacritic img{
     position: relative;
     right: 100px;
     border: solid rgb(224, 220, 220) 5px;
     border-radius: 50px;
+    transition: .3s ease;
+}
+.metacritic img:hover{
+    width: 156px;
+    height: 156px;
+}
+.titulo_about{
+    color: #f8462c;
+}
+.foot{
+    background-color: #e79702;
+    border-radius: 9px;
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+body.modo-claro .foot{
+    border: #000000 solid 5px;
+}
+.logo_rockstar img{
+    position: relative;
+    top: 25%;
+    border: #000000 solid 4px;
+    border-radius: 20px;
+}
+.itens_links1 li, ul, a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.itens_links1 h3{
+    position: relative;
+    left: 40px;
+}
+.links_nome a{
+    color: black;
+    transition: .3s ease;
+}
+.links_nome a:hover{
+    color: rgb(224, 220, 220);
+}
+.rights p{
+    text-align: center;
+    padding-top: 20px;
 }
