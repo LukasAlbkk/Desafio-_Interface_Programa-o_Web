@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.body;
     const modoLabel = document.getElementById("modo_label");
 
-    // Verifica se o modo claro está ativado no armazenamento local
     if (localStorage.getItem("modoClaro") === "true") {
         modoClaroCheckbox.checked = true;
         body.classList.add("modo-claro");
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
         modoLabel.textContent = "Modo Escuro";
     }
 
-    // Alterna entre os modos claro e escuro ao clicar no botão
     modoClaroCheckbox.addEventListener("change", function() {
         if (modoClaroCheckbox.checked) {
             body.classList.add("modo-claro");
