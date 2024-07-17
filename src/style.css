@@ -377,3 +377,158 @@ body.modo-claro .foot{
     text-align: center;
     padding-top: 20px;
 }
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 648px) {
+    .info {
+        padding: 20px;
+    }
+
+    .nome_itens {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+        z-index: 2;
+        width: fit-content;
+        border-radius: 5px;
+    }
+    
+    .itens_menu .nome_itens li a {
+        font-size: 1.4rem;
+    }
+
+    .imagem_inicial img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .container img { 
+        width: 0px;
+        height: 0px;
+    }
+
+    .historia_titulo {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .divisao_historia {
+        flex-direction: column;
+    }
+
+    .border {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        left: 0px;
+    }
+
+    .personagens_itens {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .personagen_section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sobremim_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .metacritic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .links_nome {
+        text-align: center;
+    }
+
+    .logo_rockstar img {
+        width: 70px;
+        height: 70px;
+        left: 20px;
+        bottom: 0px;
+    }
+    
+    .personagens_itens {
+        gap: 20px;
+    }
+
+    .sobre_mim_texto {
+        border-right: none;
+    }
+
+    .metacritic img {
+        right: 0px;
+    }
+    
+    .itens_links1 h3 {
+        left: 24px;
+    }
+    
+    body.modo-claro {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .toggle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        position: relative;
+        z-index: 1000; 
+        padding-left: 400px;
+    }
+
+    #modo_label {
+        font-size: 14px;
+        z-index: 1000; 
+        position: relative;
+        margin-right: 10px;
+    }
+
+    #modo_claro_checkbox {
+        width: 20px;
+        height: 20px;
+        z-index: 1000; 
+        position: relative;
+    }
+
+    .modo_claro {
+        z-index: 1000; 
+        position: relative;
+    }
+}
